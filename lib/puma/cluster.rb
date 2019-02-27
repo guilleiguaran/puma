@@ -393,7 +393,8 @@ module Puma
           stop_workers
           stop
 
-          raise SignalException, "SIGTERM"
+          # raise SignalException, "SIGTERM"
+          exit 0
         end
       end
     end
